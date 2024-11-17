@@ -1,3 +1,4 @@
-[submodule "Plugins/Unreal-LLMs"]
-	path = Plugins/Unreal-LLMs
-	url = https://github.com/MuddyTerrain/Unreal-LLMs.git
+
+[submodule "Plugins/GenerativeAISupport"]
+	path = Plugins/GenerativeAISupport
+	url = https://github.com/prajwalshettydev/UnrealGenAISupport.git
