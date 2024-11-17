@@ -1,0 +1,3 @@
+[submodule "Plugins/Unreal-LLMs"]
+	path = Plugins/Unreal-LLMs
+	url = https://github.com/MuddyTerrain/Unreal-LLMs.git
