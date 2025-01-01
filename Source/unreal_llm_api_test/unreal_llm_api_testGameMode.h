@@ -13,6 +13,7 @@ class Aunreal_llm_api_testGameMode : public AGameModeBase
 
 public:
 	Aunreal_llm_api_testGameMode();
+	void OnChatCompletion(const FString& ResponseContent, const FString& ErrorMessage, bool bSuccess);
 };
 
 
