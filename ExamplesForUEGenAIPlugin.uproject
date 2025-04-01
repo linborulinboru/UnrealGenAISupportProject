@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.4",
+	"EngineAssociation": "{F0B6F328-422A-E685-D066-089E5193D2E6}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "ExamplesForUEGenAIPlugin",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [

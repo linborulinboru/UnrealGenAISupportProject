@@ -1,0 +1,2315 @@
+{
+	"folders": [
+		{
+			"name": "ExamplesForUEGenAIPlugin",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "D:\\GitHub\\UnrealEngine"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off",
+		"terminal.integrated.env.windows": {
+			"PATH": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64;${env:PATH}",
+			"DOTNET_ROOT": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64",
+			"DOTNET_HOST_PATH": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64\\dotnet.exe",
+			"DOTNET_MULTILEVEL_LOOKUP": "0",
+			"DOTNET_ROLL_FORWARD": "LatestMajor"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Win64",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Mac Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Mac Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Mac Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Mac",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin IOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin IOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin IOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin IOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin IOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin IOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"IOS",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Debug Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Debug Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Debug Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Debug",
+					"-ServerConfig=Debug",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Debug Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android DebugGame Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android DebugGame Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android DebugGame Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=DebugGame",
+					"-ServerConfig=DebugGame",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android DebugGame Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Development Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Development Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Development Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Development",
+					"-ServerConfig=Development",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Development Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Test Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Test Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Test Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Test",
+					"-ServerConfig=Test",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Test Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Shipping Cook+Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Shipping Cook",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-Cook"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Build",
+					"ExamplesForUEGenAIPlugin Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Shipping Deploy",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\RunUAT.bat",
+				"args": [
+					"BuildCookRun",
+					"-ScriptsForProject=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-Project=D:/GitHub/UnrealGenAISupportProject/ExamplesForUEGenAIPlugin.uproject",
+					"-noP4",
+					"-ClientConfig=Shipping",
+					"-ServerConfig=Shipping",
+					"-NoCompileEditor",
+					"-utf8output",
+					"-Platform=Android",
+					"-TargetPlatform=Android",
+					"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+					"-Compressed",
+					"-IterativeCooking",
+					"-IterativeDeploy",
+					"-DeploySoToDevice",
+					"-SkipCook",
+					"-Stage",
+					"-Deploy"
+				],
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Shipping Build"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin Android Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin Android Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"Android",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin TVOS Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin TVOS DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin TVOS Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin TVOS Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Test",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPlugin TVOS Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPlugin TVOS Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPlugin",
+					"TVOS",
+					"Shipping",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Win64",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Mac Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"Debug",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Mac DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"DebugGame",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ExamplesForUEGenAIPluginEditor Mac Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			},
+			{
+				"label": "ExamplesForUEGenAIPluginEditor Mac Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ExamplesForUEGenAIPluginEditor",
+					"Mac",
+					"Development",
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\GitHub\\UnrealEngine"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch ExamplesForUEGenAIPlugin (Debug)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealGenAISupportProject\\Binaries\\Win64\\ExamplesForUEGenAIPlugin-Win64-Debug.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPlugin Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ExamplesForUEGenAIPlugin (DebugGame)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealGenAISupportProject\\Binaries\\Win64\\ExamplesForUEGenAIPlugin-Win64-DebugGame.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPlugin Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ExamplesForUEGenAIPlugin (Development)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealGenAISupportProject\\Binaries\\Win64\\ExamplesForUEGenAIPlugin.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPlugin Win64 Development Build",
+				"args": [
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ExamplesForUEGenAIPlugin (Test)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealGenAISupportProject\\Binaries\\Win64\\ExamplesForUEGenAIPlugin-Win64-Test.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPlugin Win64 Test Build",
+				"args": [
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ExamplesForUEGenAIPlugin (Shipping)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealGenAISupportProject\\Binaries\\Win64\\ExamplesForUEGenAIPlugin-Win64-Shipping.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPlugin Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ExamplesForUEGenAIPluginEditor (Debug)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPluginEditor Win64 Debug Build",
+				"args": [
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject"
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ExamplesForUEGenAIPluginEditor (DebugGame)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPluginEditor Win64 DebugGame Build",
+				"args": [
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject"
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Launch ExamplesForUEGenAIPluginEditor (Development)",
+				"request": "launch",
+				"program": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "ExamplesForUEGenAIPluginEditor Win64 Development Build",
+				"args": [
+					"D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject"
+				],
+				"cwd": "D:\\GitHub\\UnrealEngine",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\GitHub\\UnrealEngine\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis"
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "D:\\GitHub\\UnrealEngine\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=D:\\GitHub\\UnrealGenAISupportProject\\ExamplesForUEGenAIPlugin.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"env": {
+					"PATH": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64;${env:PATH}",
+					"DOTNET_ROOT": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64",
+					"DOTNET_HOST_PATH": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64\\dotnet.exe",
+					"DOTNET_MULTILEVEL_LOOKUP": "0",
+					"DOTNET_ROLL_FORWARD": "LatestMajor"
+				},
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "D:\\GitHub\\UnrealEngine"
+			}
+		]
+	}
+}
