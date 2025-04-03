@@ -3,7 +3,7 @@
       "unreal-handshake": {
         "command": "python",
         "args": [
-          "D:/GitHub/ChatGPTBlueprint/Plugins/GenerativeAISupport/Content/Python/mcp_server.py"
+          "D:/GitHub/UnrealGenAISupportProject/Plugins/GenerativeAISupport/Content/Python/mcp_server.py"
         ],
         "env": {
           "UNREAL_HOST": "localhost",
