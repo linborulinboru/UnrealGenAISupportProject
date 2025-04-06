@@ -18,7 +18,8 @@
 			"DOTNET_HOST_PATH": "D:\\GitHub\\UnrealEngine\\Engine\\Binaries\\ThirdParty\\DotNet\\8.0.300\\win-x64\\dotnet.exe",
 			"DOTNET_MULTILEVEL_LOOKUP": "0",
 			"DOTNET_ROLL_FORWARD": "LatestMajor"
-		}
+		},
+		"dotnet.defaultSolution": "ExamplesForUEGenAIPlugin/ExamplesForUEGenAIPlugin.sln"
 	},
 	"extensions": {
 		"recommendations": [

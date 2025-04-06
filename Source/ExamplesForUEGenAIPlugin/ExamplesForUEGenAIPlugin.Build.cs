@@ -9,6 +9,6 @@ public class ExamplesForUEGenAIPlugin : ModuleRules
 		PrivateDependencyModuleNames.AddRange(new string[] { "GenerativeAISupport" });
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" , "EditorScriptingUtilities" });
 	}
 }
